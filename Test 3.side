@@ -1,0 +1,63 @@
+{
+  "id": "ccf1a9d1-1295-407b-a549-3810f99ead50",
+  "version": "2.0",
+  "name": "Test 3",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "310e514d-b16e-4c74-b1fa-84742a997048",
+    "name": "Untitled",
+    "commands": [{
+      "id": "115db676-4f06-4404-93fb-4564d4e2efdd",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2cc32f9-8bb6-47ad-b1f1-22f87fb9b814",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Your Store",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "3554b3bb-0977-4879-b6ab-f80c3684a9e2",
+      "comment": "",
+      "command": "store",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": "j"
+    }, {
+      "id": "723f57b5-0f6d-4791-a6bf-5b4542047245",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${i}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f0f6b4d-edef-4a75-8dae-c0e98f7bd1b9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.URL",
+      "targets": [],
+      "value": "d"
+    }, {
+      "id": "4be005a4-701d-4051-af10-5c31cc79fb1b",
+      "comment": "",
+      "command": "assert",
+      "target": "d",
+      "targets": [],
+      "value": "${j}"
+    }]
+  }],
+  "suites": [{
+    "id": "f2b5efdd-d931-4905-89bd-ebebf63c01ad",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["310e514d-b16e-4c74-b1fa-84742a997048"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
